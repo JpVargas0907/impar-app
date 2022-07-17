@@ -102,7 +102,6 @@ const ButtonNewCard = styled.div`
 
 const CardsContent = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: 80%;
 `
@@ -199,6 +198,7 @@ const CardBox = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 36px;
+    margin-right: 30px;
     width: 234px;
     height: 267px;
     border-radius: 8px;
@@ -212,6 +212,11 @@ const CardBox = styled.div`
         margin-bottom: 30px;
         background: #F6F4F6 0% 0% no-repeat padding-box;
         border: 1px solid #E4E4E4;
+    }
+
+    p{  
+        height: 50px;
+        width: 80%;
     }
 
     .line{

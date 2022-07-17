@@ -10,6 +10,10 @@ export default function NewCardScreen(props){
         setNewCardStatus(false);
     }
 
+    function message(){
+        alert("Funcionalidade ainda não foi implementada!");
+    }
+
     return (
         <Content newCardStatus={newCardStatus}>   
             <div className='out' onClick={closeWindow} ></div>
@@ -34,7 +38,7 @@ export default function NewCardScreen(props){
                     <Line />
 
                     <div>
-                        <button>Criar Card</button>
+                        <button onClick={message}>Criar Card</button>
                     </div>
                 </Form>
             </NewCardContent>

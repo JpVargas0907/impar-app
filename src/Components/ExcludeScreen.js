@@ -11,6 +11,10 @@ export default function ExcludeScreen(props) {
         setExcludeStatus(false);
     }
 
+    function message(){
+        alert("Funcionalidade ainda não foi implementada!");
+    }
+
     return (
         <Content excludeStatus={excludeStatus}>
             <ExcludeContent>
@@ -22,7 +26,7 @@ export default function ExcludeScreen(props) {
                 <p className="caption">CERTEZA QUE DESEJA EXCLUIR?</p>
                 <div className="line"></div>
                 <div className="buttons">
-                    <ExcludeButton >
+                    <ExcludeButton onClick={message} >
                         Excluir
                     </ExcludeButton>
                     <CancelButton onClick={closeWindow}>
